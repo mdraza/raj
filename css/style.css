@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+} 
+.greeting_card{
+    width: 350px;
+    height:450px;
+    background-color:#111426;
+    color:white;
+    position:relative;
+    margin:100px auto;
+    box-shadow:4px 7px 18px -2px rgba(0, 0, 0, 0.75);
+}
+.greeting_card .front{
+    height:100%;
+    width: 100%;
+    background-color:#111426;
+    position:absolute;
+    -webkit-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: perspective(700) rotateY(0);
+          transform: perspective(700) rotateY(0);
+  z-index: 2;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(100deg, #ff6969, #ffff70, #ff6cff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.greeting_card .front .textWrapper {
+    font-family: 'Yellowtail', cursive;
+  background-color: rgba(17, 20, 38, 0.5);
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: -20px;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.15, 1, -2.7);
+          transition-timing-function: cubic-bezier(0, 0.15, 1, -2.7);
+}
+
+.greeting_card .front .textWrapper h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.greeting_card .front .textWrapper h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.greeting_card .front .firework {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border: 5px dotted #FF0000;
+  border-radius: 100%;
+  top: 40px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: firework 1.5s ease-in-out infinite;
+          animation: firework 1.5s ease-in-out infinite;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.15, 1, -2.7);
+          transition-timing-function: cubic-bezier(0, 0.15, 1, -2.7);
+}
+
+.greeting_card .front .firework .circle {
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  border: 5px dotted #0DC200;
+  position: absolute;
+}
+
+.greeting_card .front .firework .circle2 {
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  border-color: #FFF719;
+}
+
+.greeting_card .front .firework .circle3 {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  border-color: #FF0000;
+}
+
+.greeting_card .front .firework .circle4 {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border-color: #0DC200;
+}
+
+.greeting_card .front .firework .circle5 {
+  width: 15%;
+  height: 15%;
+  border-radius: 100%;
+  border-color: #FF0000;
+}
+
+.greeting_card .front .firework2 {
+  width: 110px;
+  height: 110px;
+  left: 140px;
+  top: 100px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.greeting_card .front .firework3 {
+  width: 80px;
+  height: 80px;
+  left: 30px;
+  top: 180px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.greeting_card .front .firework4 {
+  width: 120px;
+  height: 120px;
+  left: 100px;
+  top: 180px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.greeting_card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: perspective(700) rotateY(0);
+          transform: perspective(700) rotateY(0);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.greeting_card .content {
+  width: 100%;
+  height: 100%;
+  background-color: #111426;
+  color: white;
+  position: absolute;
+  text-align: center;
+  border: 10px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.greeting_card .content h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  font-family: 'Yellowtail', cursive;
+  z-index: 1;
+}
+
+.greeting_card .content .dot4 {
+  top: 300px;
+  left: 100px;
+}
+
+.greeting_card .content .dot8 {
+  left: 240px;
+}
+
+.greeting_card .content .dot9 {
+  top: 100px;
+  left: 90px;
+  background-color: white;
+}
+
+.greeting_card .content .dot10 {
+  top: 400px;
+  left: 230px;
+  background-color: white;
+}
+
+.greeting_card:hover .front {
+  -webkit-transform: perspective(700) rotateY(-160deg);
+          transform: perspective(700) rotateY(-160deg);
+}
+
+.greeting_card:hover .front .textWrapper {
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.greeting_card:hover .back {
+  -webkit-transform: perspective(700) rotateY(-160deg);
+          transform: perspective(700) rotateY(-160deg);
+  -webkit-box-shadow: 5px 0px 20px black;
+          box-shadow: 5px 0px 20px black;
+}
+
+@keyframes firework {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+@keyframes dots {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.greeting_card .front .dots,
+.content .dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #0DC200;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 2.7s ease-in-out;
+  transition: all 2.7s ease-in-out;
+  -webkit-box-shadow: 0 0 15px yellow;
+          box-shadow: 0 0 15px yellow;
+}
+
+.greeting_card .front .dots:nth-child(even),
+.content .dots:nth-child(even) {
+  -webkit-animation: dots 3s ease-in-out infinite;
+          animation: dots 3s ease-in-out infinite;
+}
+
+.greeting_card .front .dots:nth-child(odd),
+.content .dots:nth-child(odd) {
+  -webkit-animation: dots 2s ease-in-out infinite;
+          animation: dots 2s ease-in-out infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.greeting_card .front .dot2,
+.content .dot2 {
+  top: 50px;
+  left: 200px;
+  background-color: #FF0000;
+}
+
+.greeting_card .front .dot3,
+.content .dot3 {
+  top: 350px;
+  left: 200px;
+  background-color: #5F0E95;
+}
+
+.greeting_card .front .dot4,
+.content .dot4 {
+  top: 320px;
+  left: 150px;
+  background-color: #FFF719;
+}
+
+.greeting_card .front .dot5,
+.content .dot5 {
+  top: 350px;
+  left: 10px;
+  background-color: #FF0000;
+}
+
+.greeting_card .front .dot6,
+.content .dot6 {
+  top: 390px;
+  left: 100px;
+  background-color: #0DC200;
+}
+
+.greeting_card .front .dot7,
+.content .dot7 {
+  top: 150px;
+  left: 10px;
+  background-color: #FFF719;
+}
+
+.greeting_card .front .dot8,
+.content .dot8 {
+  top: 200px;
+  left: 250px;
+  background-color: #FF0000;
+}
+
+.warning {
+  color: red;
+  text-align: center;
+  margin-top: -100px;
+}
+/*# sourceMappingURL=style.css.map */
